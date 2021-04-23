@@ -1,0 +1,896 @@
+Archive member included to satisfy reference by file (symbol)
+
+c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega3\libgcc.a(_exit.o)
+                              C:/Program Files (x86)/Atmel/Studio/7.0/Packs/Atmel/ATtiny_DFP/1.3.229/gcc/dev/attiny1617/avrxmega3/crtattiny1617.o (exit)
+c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega3\libgcc.a(_tablejump2.o)
+                              main.o (__tablejump2__)
+c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega3\libgcc.a(_clear_bss.o)
+                              main.o (__do_clear_bss)
+C:/Program Files (x86)/Atmel/Studio/7.0/Packs/Atmel/ATtiny_DFP/1.3.229/gcc/dev/attiny1617/avrxmega3\libattiny1617.a(ccp_write.o)
+                              main.o (ccp_write_io)
+
+Allocating common symbols
+Common symbol       size              file
+
+p_BIGrcvData        0x2               main.o
+g_ul_tick_count     0x2               main.o
+g_sensitivityLoByte
+                    0x1               main.o
+mState              0x1               main.o
+p_GPSrcvData        0x2               main.o
+g_sensitivityHiBit  0x1               main.o
+uBloxStatus         0x1               main.o
+GPSSearchPtr        0x2               main.o
+
+Discarded input sections
+
+ .data          0x00000000        0x0 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/Atmel/ATtiny_DFP/1.3.229/gcc/dev/attiny1617/avrxmega3/crtattiny1617.o
+ .bss           0x00000000        0x0 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/Atmel/ATtiny_DFP/1.3.229/gcc/dev/attiny1617/avrxmega3/crtattiny1617.o
+ .text          0x00000000        0x0 atmel_start.o
+ .data          0x00000000        0x0 atmel_start.o
+ .bss           0x00000000        0x0 atmel_start.o
+ .text          0x00000000        0x0 main.o
+ .data          0x00000000        0x0 main.o
+ .bss           0x00000000        0x0 main.o
+ .text.searchRcvBuff
+                0x00000000       0x42 main.o
+ .text.getALSfromProx
+                0x00000000       0xae main.o
+ .text.myDelay_hus
+                0x00000000       0x2c main.o
+ .text.sendSPIbuff
+                0x00000000       0x3e main.o
+ .text.sendSPIbyte
+                0x00000000       0x1a main.o
+ .text.rcvSPIbuff
+                0x00000000       0x1e main.o
+ .text.USART_0_putc
+                0x00000000       0x12 main.o
+ .text.LCDbottomLine
+                0x00000000       0x3a main.o
+ .text.LCDspace
+                0x00000000       0x18 main.o
+ .text.send56BytesToBig
+                0x00000000       0x7c main.o
+ .text.getPIRbit
+                0x00000000       0x28 main.o
+ .text.getPIRbyte
+                0x00000000       0x4a main.o
+ .text          0x00000000        0x0 src/bod.o
+ .data          0x00000000        0x0 src/bod.o
+ .bss           0x00000000        0x0 src/bod.o
+ .text          0x00000000        0x0 src/clkctrl.o
+ .data          0x00000000        0x0 src/clkctrl.o
+ .bss           0x00000000        0x0 src/clkctrl.o
+ .text          0x00000000        0x0 src/cpuint.o
+ .data          0x00000000        0x0 src/cpuint.o
+ .bss           0x00000000        0x0 src/cpuint.o
+ .text          0x00000000        0x0 src/driver_init.o
+ .data          0x00000000        0x0 src/driver_init.o
+ .bss           0x00000000        0x0 src/driver_init.o
+ .text          0x00000000        0x0 src/protected_io.o
+ .data          0x00000000        0x0 src/protected_io.o
+ .bss           0x00000000        0x0 src/protected_io.o
+ .text          0x00000000        0x0 src/rtc.o
+ .data          0x00000000        0x0 src/rtc.o
+ .bss           0x00000000        0x0 src/rtc.o
+ .text          0x00000000        0x0 src/slpctrl.o
+ .data          0x00000000        0x0 src/slpctrl.o
+ .bss           0x00000000        0x0 src/slpctrl.o
+ .text          0x00000000        0x0 src/usart.o
+ .data          0x00000000        0x0 src/usart.o
+ .bss           0x00000000        0x0 src/usart.o
+ .text          0x00000000        0x0 TWI_BitBang.o
+ .data          0x00000000        0x0 TWI_BitBang.o
+ .bss           0x00000000        0x0 TWI_BitBang.o
+ .text.twi_disable
+                0x00000000        0xc TWI_BitBang.o
+ .text.write_scl
+                0x00000000       0x14 TWI_BitBang.o
+ .text.write_sda
+                0x00000000        0xe TWI_BitBang.o
+ .text.twi_init
+                0x00000000       0x20 TWI_BitBang.o
+ .text.myDelay_twi
+                0x00000000       0x22 TWI_BitBang.o
+ .text.twi_start_cond
+                0x00000000       0x2e TWI_BitBang.o
+ .text.twi_stop_cond
+                0x00000000       0x18 TWI_BitBang.o
+ .text.i2c_write_byte
+                0x00000000       0x6a TWI_BitBang.o
+ .text.send_slave_address
+                0x00000000        0x8 TWI_BitBang.o
+ .text.i2cAddressTest
+                0x00000000       0x1a TWI_BitBang.o
+ .text.i2cAddressTestRd
+                0x00000000       0x1a TWI_BitBang.o
+ .text.write_data
+                0x00000000       0x78 TWI_BitBang.o
+ .text.i2c_read_byte
+                0x00000000       0xc4 TWI_BitBang.o
+ .text.read_bytes
+                0x00000000       0x60 TWI_BitBang.o
+ .debug_info    0x00000000     0x11ba TWI_BitBang.o
+ .debug_abbrev  0x00000000      0x328 TWI_BitBang.o
+ .debug_loc     0x00000000      0xb6c TWI_BitBang.o
+ .debug_aranges
+                0x00000000       0x88 TWI_BitBang.o
+ .debug_ranges  0x00000000       0x78 TWI_BitBang.o
+ .debug_line    0x00000000      0x568 TWI_BitBang.o
+ .debug_str     0x00000000      0x503 TWI_BitBang.o
+ .comment       0x00000000       0x31 TWI_BitBang.o
+ .debug_frame   0x00000000      0x180 TWI_BitBang.o
+ .text          0x00000000        0x0 utils/initTinyBoard.o
+ .data          0x00000000        0x0 utils/initTinyBoard.o
+ .bss           0x00000000        0x0 utils/initTinyBoard.o
+ .debug_info    0x00000000       0x5d utils/initTinyBoard.o
+ .debug_abbrev  0x00000000       0x26 utils/initTinyBoard.o
+ .debug_aranges
+                0x00000000       0x18 utils/initTinyBoard.o
+ .debug_line    0x00000000       0x1a utils/initTinyBoard.o
+ .debug_str     0x00000000      0x1a8 utils/initTinyBoard.o
+ .comment       0x00000000       0x31 utils/initTinyBoard.o
+ .text          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega3\libgcc.a(_exit.o)
+ .data          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega3\libgcc.a(_exit.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega3\libgcc.a(_exit.o)
+ .text.libgcc.mul
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega3\libgcc.a(_exit.o)
+ .text.libgcc.div
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega3\libgcc.a(_exit.o)
+ .text.libgcc   0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega3\libgcc.a(_exit.o)
+ .text.libgcc.prologue
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega3\libgcc.a(_exit.o)
+ .text.libgcc.builtins
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega3\libgcc.a(_exit.o)
+ .text.libgcc.fmul
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega3\libgcc.a(_exit.o)
+ .text.libgcc.fixed
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega3\libgcc.a(_exit.o)
+ .text          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega3\libgcc.a(_tablejump2.o)
+ .data          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega3\libgcc.a(_tablejump2.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega3\libgcc.a(_tablejump2.o)
+ .text.libgcc.mul
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega3\libgcc.a(_tablejump2.o)
+ .text.libgcc.div
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega3\libgcc.a(_tablejump2.o)
+ .text.libgcc.prologue
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega3\libgcc.a(_tablejump2.o)
+ .text.libgcc.builtins
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega3\libgcc.a(_tablejump2.o)
+ .text.libgcc.fmul
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega3\libgcc.a(_tablejump2.o)
+ .text.libgcc.fixed
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega3\libgcc.a(_tablejump2.o)
+ .text          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega3\libgcc.a(_clear_bss.o)
+ .data          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega3\libgcc.a(_clear_bss.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega3\libgcc.a(_clear_bss.o)
+ .text.libgcc.mul
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega3\libgcc.a(_clear_bss.o)
+ .text.libgcc.div
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega3\libgcc.a(_clear_bss.o)
+ .text.libgcc   0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega3\libgcc.a(_clear_bss.o)
+ .text.libgcc.prologue
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega3\libgcc.a(_clear_bss.o)
+ .text.libgcc.builtins
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega3\libgcc.a(_clear_bss.o)
+ .text.libgcc.fmul
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega3\libgcc.a(_clear_bss.o)
+ .text.libgcc.fixed
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega3\libgcc.a(_clear_bss.o)
+ .text          0x00000000        0x0 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/Atmel/ATtiny_DFP/1.3.229/gcc/dev/attiny1617/avrxmega3\libattiny1617.a(ccp_write.o)
+ .data          0x00000000        0x0 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/Atmel/ATtiny_DFP/1.3.229/gcc/dev/attiny1617/avrxmega3\libattiny1617.a(ccp_write.o)
+ .bss           0x00000000        0x0 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/Atmel/ATtiny_DFP/1.3.229/gcc/dev/attiny1617/avrxmega3\libattiny1617.a(ccp_write.o)
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+text             0x00000000         0x00100000         xr
+data             0x00802000         0x0000ffa0         rw !x
+eeprom           0x00810000         0x00010000         rw !x
+fuse             0x00820000         0x00000009         rw !x
+lock             0x00830000         0x00000400         rw !x
+signature        0x00840000         0x00000400         rw !x
+user_signatures  0x00850000         0x00000400         rw !x
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+Address of section .data set to 0x803800
+                0x00008000                __RODATA_PM_OFFSET__ = 0x8000
+LOAD C:/Program Files (x86)/Atmel/Studio/7.0/Packs/Atmel/ATtiny_DFP/1.3.229/gcc/dev/attiny1617/avrxmega3/crtattiny1617.o
+LOAD atmel_start.o
+LOAD main.o
+LOAD src/bod.o
+LOAD src/clkctrl.o
+LOAD src/cpuint.o
+LOAD src/driver_init.o
+LOAD src/protected_io.o
+LOAD src/rtc.o
+LOAD src/slpctrl.o
+LOAD src/usart.o
+LOAD TWI_BitBang.o
+LOAD utils/initTinyBoard.o
+START GROUP
+LOAD c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3\libm.a
+END GROUP
+START GROUP
+LOAD c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega3\libgcc.a
+LOAD c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3\libm.a
+LOAD c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3\libc.a
+LOAD C:/Program Files (x86)/Atmel/Studio/7.0/Packs/Atmel/ATtiny_DFP/1.3.229/gcc/dev/attiny1617/avrxmega3\libattiny1617.a
+END GROUP
+                0x00100000                __TEXT_REGION_LENGTH__ = DEFINED (__TEXT_REGION_LENGTH__)?__TEXT_REGION_LENGTH__:0x100000
+                0x0000ffa0                __DATA_REGION_LENGTH__ = DEFINED (__DATA_REGION_LENGTH__)?__DATA_REGION_LENGTH__:0xffa0
+                0x00010000                __EEPROM_REGION_LENGTH__ = DEFINED (__EEPROM_REGION_LENGTH__)?__EEPROM_REGION_LENGTH__:0x10000
+                [0x00000009]                __FUSE_REGION_LENGTH__ = DEFINED (__FUSE_REGION_LENGTH__)?__FUSE_REGION_LENGTH__:0x400
+                0x00000400                __LOCK_REGION_LENGTH__ = DEFINED (__LOCK_REGION_LENGTH__)?__LOCK_REGION_LENGTH__:0x400
+                0x00000400                __SIGNATURE_REGION_LENGTH__ = DEFINED (__SIGNATURE_REGION_LENGTH__)?__SIGNATURE_REGION_LENGTH__:0x400
+                0x00000400                __USER_SIGNATURE_REGION_LENGTH__ = DEFINED (__USER_SIGNATURE_REGION_LENGTH__)?__USER_SIGNATURE_REGION_LENGTH__:0x400
+                0x00008000                __RODATA_PM_OFFSET__ = DEFINED (__RODATA_PM_OFFSET__)?__RODATA_PM_OFFSET__:0x8000
+
+.hash
+ *(.hash)
+
+.dynsym
+ *(.dynsym)
+
+.dynstr
+ *(.dynstr)
+
+.gnu.version
+ *(.gnu.version)
+
+.gnu.version_d
+ *(.gnu.version_d)
+
+.gnu.version_r
+ *(.gnu.version_r)
+
+.rel.init
+ *(.rel.init)
+
+.rela.init
+ *(.rela.init)
+
+.rel.text
+ *(.rel.text)
+ *(.rel.text.*)
+ *(.rel.gnu.linkonce.t*)
+
+.rela.text
+ *(.rela.text)
+ *(.rela.text.*)
+ *(.rela.gnu.linkonce.t*)
+
+.rel.fini
+ *(.rel.fini)
+
+.rela.fini
+ *(.rela.fini)
+
+.rel.rodata
+ *(.rel.rodata)
+ *(.rel.rodata.*)
+ *(.rel.gnu.linkonce.r*)
+
+.rela.rodata
+ *(.rela.rodata)
+ *(.rela.rodata.*)
+ *(.rela.gnu.linkonce.r*)
+
+.rel.data
+ *(.rel.data)
+ *(.rel.data.*)
+ *(.rel.gnu.linkonce.d*)
+
+.rela.data
+ *(.rela.data)
+ *(.rela.data.*)
+ *(.rela.gnu.linkonce.d*)
+
+.rel.ctors
+ *(.rel.ctors)
+
+.rela.ctors
+ *(.rela.ctors)
+
+.rel.dtors
+ *(.rel.dtors)
+
+.rela.dtors
+ *(.rela.dtors)
+
+.rel.got
+ *(.rel.got)
+
+.rela.got
+ *(.rela.got)
+
+.rel.bss
+ *(.rel.bss)
+
+.rela.bss
+ *(.rela.bss)
+
+.rel.plt
+ *(.rel.plt)
+
+.rela.plt
+ *(.rela.plt)
+
+.text           0x00000000     0x2276
+ *(.vectors)
+ .vectors       0x00000000       0x7c C:/Program Files (x86)/Atmel/Studio/7.0/Packs/Atmel/ATtiny_DFP/1.3.229/gcc/dev/attiny1617/avrxmega3/crtattiny1617.o
+                0x00000000                __vector_default
+                0x00000000                __vectors
+ *(.vectors)
+ *(.progmem.gcc*)
+ .progmem.gcc_sw_table.asciiToHex
+                0x0000007c       0x26 main.o
+ .progmem.gcc_sw_table.asciiHexToHex
+                0x000000a2       0x5a main.o
+ .progmem.gcc_sw_table.hex1ToAscii
+                0x000000fc       0x20 main.o
+ .progmem.gcc_sw_table.main
+                0x0000011c       0x10 main.o
+                0x0000012c                . = ALIGN (0x2)
+                0x0000012c                __trampolines_start = .
+ *(.trampolines)
+ .trampolines   0x0000012c        0x0 linker stubs
+ *(.trampolines*)
+                0x0000012c                __trampolines_end = .
+ *libprintf_flt.a:*(.progmem.data)
+ *libc.a:*(.progmem.data)
+ *(.progmem*)
+                0x0000012c                . = ALIGN (0x2)
+ *(.jumptables)
+ *(.jumptables*)
+ *(.lowtext)
+ *(.lowtext*)
+                0x0000012c                __ctors_start = .
+ *(.ctors)
+                0x0000012c                __ctors_end = .
+                0x0000012c                __dtors_start = .
+ *(.dtors)
+                0x0000012c                __dtors_end = .
+ SORT(*)(.ctors)
+ SORT(*)(.dtors)
+ *(.init0)
+ .init0         0x0000012c        0x0 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/Atmel/ATtiny_DFP/1.3.229/gcc/dev/attiny1617/avrxmega3/crtattiny1617.o
+                0x0000012c                __init
+ *(.init0)
+ *(.init1)
+ *(.init1)
+ *(.init2)
+ .init2         0x0000012c        0xc C:/Program Files (x86)/Atmel/Studio/7.0/Packs/Atmel/ATtiny_DFP/1.3.229/gcc/dev/attiny1617/avrxmega3/crtattiny1617.o
+ *(.init2)
+ *(.init3)
+ *(.init3)
+ *(.init4)
+ .init4         0x00000138       0x10 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega3\libgcc.a(_clear_bss.o)
+                0x00000138                __do_clear_bss
+ *(.init4)
+ *(.init5)
+ *(.init5)
+ *(.init6)
+ *(.init6)
+ *(.init7)
+ *(.init7)
+ *(.init8)
+ *(.init8)
+ *(.init9)
+ .init9         0x00000148        0x8 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/Atmel/ATtiny_DFP/1.3.229/gcc/dev/attiny1617/avrxmega3/crtattiny1617.o
+ *(.init9)
+ *(.text)
+ .text          0x00000150        0x4 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/Atmel/ATtiny_DFP/1.3.229/gcc/dev/attiny1617/avrxmega3/crtattiny1617.o
+                0x00000150                __vector_22
+                0x00000150                __vector_28
+                0x00000150                __vector_1
+                0x00000150                __vector_24
+                0x00000150                __vector_12
+                0x00000150                __bad_interrupt
+                0x00000150                __vector_3
+                0x00000150                __vector_23
+                0x00000150                __vector_30
+                0x00000150                __vector_25
+                0x00000150                __vector_11
+                0x00000150                __vector_17
+                0x00000150                __vector_19
+                0x00000150                __vector_7
+                0x00000150                __vector_9
+                0x00000150                __vector_2
+                0x00000150                __vector_21
+                0x00000150                __vector_15
+                0x00000150                __vector_29
+                0x00000150                __vector_8
+                0x00000150                __vector_26
+                0x00000150                __vector_14
+                0x00000150                __vector_10
+                0x00000150                __vector_16
+                0x00000150                __vector_18
+                0x00000150                __vector_20
+                0x00000154                . = ALIGN (0x2)
+ *(.text.*)
+ .text.atmel_start_init
+                0x00000154        0x6 atmel_start.o
+                0x00000154                atmel_start_init
+ .text.getBatt  0x0000015a       0xb2 main.o
+                0x0000015a                getBatt
+ .text.getLight
+                0x0000020c       0xba main.o
+                0x0000020c                getLight
+ .text.searchRcvBuffuBlox
+                0x000002c6       0x50 main.o
+                0x000002c6                searchRcvBuffuBlox
+ .text.asciiToHex
+                0x00000316       0x96 main.o
+                0x00000316                asciiToHex
+ .text.asciiHexToHex
+                0x000003ac       0xe4 main.o
+                0x000003ac                asciiHexToHex
+ .text.delay_ms
+                0x00000490       0x2e main.o
+                0x00000490                delay_ms
+ .text.getProx  0x000004be       0xb0 main.o
+                0x000004be                getProx
+ .text.redBlink
+                0x0000056e       0x3a main.o
+                0x0000056e                redBlink
+ .text.redBlinkLong
+                0x000005a8       0x3a main.o
+                0x000005a8                redBlinkLong
+ .text.usart_put_string
+                0x000005e2       0x22 main.o
+                0x000005e2                usart_put_string
+ .text.initGPSuBlox
+                0x00000604       0xbe main.o
+                0x00000604                initGPSuBlox
+ .text.hex1ToAscii
+                0x000006c2       0x4e main.o
+                0x000006c2                hex1ToAscii
+ .text.hex2ToAscii
+                0x00000710       0x36 main.o
+                0x00000710                hex2ToAscii
+ .text.LCDshort
+                0x00000746       0x86 main.o
+                0x00000746                LCDshort
+ .text.LCDclear
+                0x000007cc       0x46 main.o
+                0x000007cc                LCDclear
+ .text.clrRx    0x00000812       0x36 main.o
+                0x00000812                clrRx
+ .text.gpsReqDateUblox
+                0x00000848      0x2c4 main.o
+                0x00000848                gpsReqDateUblox
+ .text.GPSgetDate
+                0x00000b0c       0x66 main.o
+                0x00000b0c                GPSgetDate
+ .text.gpsReqStatusUblox
+                0x00000b72      0x17e main.o
+                0x00000b72                gpsReqStatusUblox
+ .text.gpsReqLocUblox
+                0x00000cf0      0x4ac main.o
+                0x00000cf0                gpsReqLocUblox
+ .text.GPSgetTime
+                0x0000119c       0xac main.o
+                0x0000119c                GPSgetTime
+ .text.calcCRC  0x00001248       0x90 main.o
+                0x00001248                calcCRC
+ .text.getByteFromBig
+                0x000012d8      0x142 main.o
+                0x000012d8                getByteFromBig
+ .text.sendByteToBig
+                0x0000141a      0x1a2 main.o
+                0x0000141a                sendByteToBig
+ .text.getPacketFromBig
+                0x000015bc      0x2a0 main.o
+                0x000015bc                getPacketFromBig
+ .text.USART0_ON
+                0x0000185c       0x52 main.o
+                0x0000185c                USART0_ON
+ .text.openGPSuBlox
+                0x000018ae       0x24 main.o
+                0x000018ae                openGPSuBlox
+ .text.USART0_OFF
+                0x000018d2        0xe main.o
+                0x000018d2                USART0_OFF
+ .text.closeGPS
+                0x000018e0       0x18 main.o
+                0x000018e0                closeGPS
+ .text.gTryUblox
+                0x000018f8       0xae main.o
+                0x000018f8                gTryUblox
+ .text.sleepPins
+                0x000019a6      0x134 main.o
+                0x000019a6                sleepPins
+ .text.getGPS   0x00001ada       0x98 main.o
+                0x00001ada                getGPS
+ .text.pirSUdelay
+                0x00001b72       0x10 main.o
+                0x00001b72                pirSUdelay
+ .text.setPIRbit
+                0x00001b82       0x46 main.o
+                0x00001b82                setPIRbit
+ .text.setPIRconfig
+                0x00001bc8       0x44 main.o
+                0x00001bc8                setPIRconfig
+ .text.pirCLKdelay
+                0x00001c0c        0x4 main.o
+                0x00001c0c                pirCLKdelay
+ .text.clearPIRinterrupt
+                0x00001c10        0xc main.o
+                0x00001c10                clearPIRinterrupt
+ .text.main     0x00001c1c      0x276 main.o
+                0x00001c1c                main
+ .text.__vector_13
+                0x00001e92       0x24 main.o
+                0x00001e92                __vector_13
+ .text.__vector_5
+                0x00001eb6       0x92 main.o
+                0x00001eb6                __vector_5
+ .text.__vector_27
+                0x00001f48       0x74 main.o
+                0x00001f48                __vector_27
+ .text.__vector_4
+                0x00001fbc       0x3a main.o
+                0x00001fbc                __vector_4
+ .text.__vector_6
+                0x00001ff6      0x190 main.o
+                0x00001ff6                __vector_6
+ .text.BOD_init
+                0x00002186        0x4 src/bod.o
+                0x00002186                BOD_init
+ .text.CLKCTRL_init
+                0x0000218a       0x28 src/clkctrl.o
+                0x0000218a                CLKCTRL_init
+ .text.CPUINT_init
+                0x000021b2        0x4 src/cpuint.o
+                0x000021b2                CPUINT_init
+ .text.mcu_init
+                0x000021b6       0x26 src/driver_init.o
+                0x000021b6                mcu_init
+ .text.USART_0_initialization
+                0x000021dc       0x16 src/driver_init.o
+                0x000021dc                USART_0_initialization
+ .text.system_init
+                0x000021f2       0x1e src/driver_init.o
+                0x000021f2                system_init
+ .text.protected_write_io
+                0x00002210        0x8 src/protected_io.o
+                0x00002210                protected_write_io
+ .text.RTC_0_init
+                0x00002218       0x26 src/rtc.o
+                0x00002218                RTC_0_init
+ .text.SLPCTRL_init
+                0x0000223e        0x4 src/slpctrl.o
+                0x0000223e                SLPCTRL_init
+ .text.USART_0_init
+                0x00002242       0x18 src/usart.o
+                0x00002242                USART_0_init
+ .text.libgcc   0x0000225a        0xc c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega3\libgcc.a(_tablejump2.o)
+                0x0000225a                __tablejump2__
+ .text.avr-libc
+                0x00002266        0xc C:/Program Files (x86)/Atmel/Studio/7.0/Packs/Atmel/ATtiny_DFP/1.3.229/gcc/dev/attiny1617/avrxmega3\libattiny1617.a(ccp_write.o)
+                0x00002266                ccp_write_io
+                0x00002272                . = ALIGN (0x2)
+ *(.fini9)
+ .fini9         0x00002272        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega3\libgcc.a(_exit.o)
+                0x00002272                _exit
+                0x00002272                exit
+ *(.fini9)
+ *(.fini8)
+ *(.fini8)
+ *(.fini7)
+ *(.fini7)
+ *(.fini6)
+ *(.fini6)
+ *(.fini5)
+ *(.fini5)
+ *(.fini4)
+ *(.fini4)
+ *(.fini3)
+ *(.fini3)
+ *(.fini2)
+ *(.fini2)
+ *(.fini1)
+ *(.fini1)
+ *(.fini0)
+ .fini0         0x00002272        0x4 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega3\libgcc.a(_exit.o)
+ *(.fini0)
+                0x00002276                _etext = .
+
+.rodata         0x0000a276       0xfd load address 0x00002276
+ *(.rodata)
+ .rodata        0x0000a276       0xb7 main.o
+ *(.rodata*)
+ .rodata.str1.1
+                0x0000a32d       0x46 main.o
+ *(.gnu.linkonce.r*)
+
+.data           0x00803800        0x0 load address 0x00002373
+                [!provide]                PROVIDE (__data_start, .)
+ *(.data)
+ *(.data*)
+ *(.gnu.linkonce.d*)
+                0x00803800                . = ALIGN (0x2)
+                0x00803800                _edata = .
+                [!provide]                PROVIDE (__data_end, .)
+
+.bss            0x00803800      0x155
+                0x00803800                PROVIDE (__bss_start, .)
+ *(.bss)
+ *(.bss*)
+ .bss.g_holdForBigFlag
+                0x00803800        0x1 main.o
+ .bss.g_noMotionFlag
+                0x00803801        0x1 main.o
+ .bss.g_proxVals
+                0x00803802        0xc main.o
+ .bss.g_motionPatternMask
+                0x0080380e        0x1 main.o
+ .bss.g_motionPattern
+                0x0080380f        0x8 main.o
+ .bss.g_motionPatternIndex
+                0x00803817        0x1 main.o
+ .bss.g_motionMinTotal
+                0x00803818        0x1 main.o
+ .bss.g_block5index
+                0x00803819        0x1 main.o
+ .bss.g_5secCtr
+                0x0080381a        0x1 main.o
+ .bss.g_motSecCtr
+                0x0080381b        0x1 main.o
+ .bss.g_light   0x0080381c        0x2 main.o
+ .bss.g_gotMotion
+                0x0080381e        0x1 main.o
+ .bss.g_GPSrcv_buffer
+                0x0080381f       0xb6 main.o
+ .bss.motParams
+                0x008038d5       0x38 main.o
+ .bss.gpsParams
+                0x0080390d       0x38 main.o
+ .bss.timeToFix
+                0x00803945        0x2 main.o
+ .bss.endOfLineFlag
+                0x00803947        0x1 main.o
+ .bss.rcvdCmd   0x00803948        0x1 main.o
+                0x00803948                rcvdCmd
+ *(COMMON)
+ COMMON         0x00803949        0xc main.o
+                0x00803949                p_BIGrcvData
+                0x0080394b                g_ul_tick_count
+                0x0080394d                g_sensitivityLoByte
+                0x0080394e                mState
+                0x0080394f                p_GPSrcvData
+                0x00803951                g_sensitivityHiBit
+                0x00803952                uBloxStatus
+                0x00803953                GPSSearchPtr
+                0x00803955                PROVIDE (__bss_end, .)
+                0x00002373                __data_load_start = LOADADDR (.data)
+                0x00002373                __data_load_end = (__data_load_start + SIZEOF (.data))
+
+.noinit         0x00803955        0x0
+                [!provide]                PROVIDE (__noinit_start, .)
+ *(.noinit*)
+                [!provide]                PROVIDE (__noinit_end, .)
+                0x00803955                _end = .
+                [!provide]                PROVIDE (__heap_start, .)
+
+.eeprom         0x00810000        0x0
+ *(.eeprom*)
+                0x00810000                __eeprom_end = .
+
+.fuse
+ *(.fuse)
+ *(.lfuse)
+ *(.hfuse)
+ *(.efuse)
+
+.lock
+ *(.lock*)
+
+.signature
+ *(.signature*)
+
+.user_signatures
+ *(.user_signatures*)
+
+.stab
+ *(.stab)
+
+.stabstr
+ *(.stabstr)
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.comment        0x00000000       0x30
+ *(.comment)
+ .comment       0x00000000       0x30 atmel_start.o
+                                 0x31 (size before relaxing)
+ .comment       0x00000030       0x31 main.o
+ .comment       0x00000030       0x31 src/bod.o
+ .comment       0x00000030       0x31 src/clkctrl.o
+ .comment       0x00000030       0x31 src/cpuint.o
+ .comment       0x00000030       0x31 src/driver_init.o
+ .comment       0x00000030       0x31 src/rtc.o
+ .comment       0x00000030       0x31 src/slpctrl.o
+ .comment       0x00000030       0x31 src/usart.o
+
+.note.gnu.avr.deviceinfo
+                0x00000000       0x40
+ .note.gnu.avr.deviceinfo
+                0x00000000       0x40 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/Atmel/ATtiny_DFP/1.3.229/gcc/dev/attiny1617/avrxmega3/crtattiny1617.o
+
+.note.gnu.build-id
+ *(.note.gnu.build-id)
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges  0x00000000      0x320
+ *(.debug_aranges)
+ .debug_aranges
+                0x00000000       0x20 atmel_start.o
+ .debug_aranges
+                0x00000020      0x1d0 main.o
+ .debug_aranges
+                0x000001f0       0x20 src/bod.o
+ .debug_aranges
+                0x00000210       0x20 src/clkctrl.o
+ .debug_aranges
+                0x00000230       0x20 src/cpuint.o
+ .debug_aranges
+                0x00000250       0x30 src/driver_init.o
+ .debug_aranges
+                0x00000280       0x20 src/protected_io.o
+ .debug_aranges
+                0x000002a0       0x20 src/rtc.o
+ .debug_aranges
+                0x000002c0       0x20 src/slpctrl.o
+ .debug_aranges
+                0x000002e0       0x20 src/usart.o
+ .debug_aranges
+                0x00000300       0x20 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/Atmel/ATtiny_DFP/1.3.229/gcc/dev/attiny1617/avrxmega3\libattiny1617.a(ccp_write.o)
+
+.debug_pubnames
+ *(.debug_pubnames)
+
+.debug_info     0x00000000     0x8991
+ *(.debug_info .gnu.linkonce.wi.*)
+ .debug_info    0x00000000     0x19ed C:/Program Files (x86)/Atmel/Studio/7.0/Packs/Atmel/ATtiny_DFP/1.3.229/gcc/dev/attiny1617/avrxmega3/crtattiny1617.o
+ .debug_info    0x000019ed       0x9a atmel_start.o
+ .debug_info    0x00001a87     0x5b6a main.o
+ .debug_info    0x000075f1       0x8d src/bod.o
+ .debug_info    0x0000767e      0x3f0 src/clkctrl.o
+ .debug_info    0x00007a6e       0x8d src/cpuint.o
+ .debug_info    0x00007afb      0x653 src/driver_init.o
+ .debug_info    0x0000814e       0xad src/protected_io.o
+ .debug_info    0x000081fb      0x422 src/rtc.o
+ .debug_info    0x0000861d       0x8d src/slpctrl.o
+ .debug_info    0x000086aa      0x248 src/usart.o
+ .debug_info    0x000088f2       0x9f C:/Program Files (x86)/Atmel/Studio/7.0/Packs/Atmel/ATtiny_DFP/1.3.229/gcc/dev/attiny1617/avrxmega3\libattiny1617.a(ccp_write.o)
+
+.debug_abbrev   0x00000000     0x2294
+ *(.debug_abbrev)
+ .debug_abbrev  0x00000000     0x1888 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/Atmel/ATtiny_DFP/1.3.229/gcc/dev/attiny1617/avrxmega3/crtattiny1617.o
+ .debug_abbrev  0x00001888       0x63 atmel_start.o
+ .debug_abbrev  0x000018eb      0x416 main.o
+ .debug_abbrev  0x00001d01       0x51 src/bod.o
+ .debug_abbrev  0x00001d52      0x116 src/clkctrl.o
+ .debug_abbrev  0x00001e68       0x51 src/cpuint.o
+ .debug_abbrev  0x00001eb9      0x1ba src/driver_init.o
+ .debug_abbrev  0x00002073       0x14 src/protected_io.o
+ .debug_abbrev  0x00002087       0xd4 src/rtc.o
+ .debug_abbrev  0x0000215b       0x51 src/slpctrl.o
+ .debug_abbrev  0x000021ac       0xd4 src/usart.o
+ .debug_abbrev  0x00002280       0x14 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/Atmel/ATtiny_DFP/1.3.229/gcc/dev/attiny1617/avrxmega3\libattiny1617.a(ccp_write.o)
+
+.debug_line     0x00000000     0x3219
+ *(.debug_line .debug_line.* .debug_line_end)
+ .debug_line    0x00000000      0x151 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/Atmel/ATtiny_DFP/1.3.229/gcc/dev/attiny1617/avrxmega3/crtattiny1617.o
+ .debug_line    0x00000151       0x60 atmel_start.o
+ .debug_line    0x000001b1     0x2823 main.o
+ .debug_line    0x000029d4       0xa2 src/bod.o
+ .debug_line    0x00002a76      0x137 src/clkctrl.o
+ .debug_line    0x00002bad       0xa5 src/cpuint.o
+ .debug_line    0x00002c52      0x21b src/driver_init.o
+ .debug_line    0x00002e6d       0x55 src/protected_io.o
+ .debug_line    0x00002ec2      0x133 src/rtc.o
+ .debug_line    0x00002ff5       0xa6 src/slpctrl.o
+ .debug_line    0x0000309b      0x117 src/usart.o
+ .debug_line    0x000031b2       0x67 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/Atmel/ATtiny_DFP/1.3.229/gcc/dev/attiny1617/avrxmega3\libattiny1617.a(ccp_write.o)
+
+.debug_frame    0x00000000      0x7d4
+ *(.debug_frame)
+ .debug_frame   0x00000000       0x24 atmel_start.o
+ .debug_frame   0x00000024      0x694 main.o
+ .debug_frame   0x000006b8       0x24 src/bod.o
+ .debug_frame   0x000006dc       0x24 src/clkctrl.o
+ .debug_frame   0x00000700       0x24 src/cpuint.o
+ .debug_frame   0x00000724       0x44 src/driver_init.o
+ .debug_frame   0x00000768       0x24 src/rtc.o
+ .debug_frame   0x0000078c       0x24 src/slpctrl.o
+ .debug_frame   0x000007b0       0x24 src/usart.o
+
+.debug_str      0x00000000     0x2385
+ *(.debug_str)
+ .debug_str     0x00000000      0xacf C:/Program Files (x86)/Atmel/Studio/7.0/Packs/Atmel/ATtiny_DFP/1.3.229/gcc/dev/attiny1617/avrxmega3/crtattiny1617.o
+ .debug_str     0x00000acf      0x18d atmel_start.o
+                                0x1c1 (size before relaxing)
+ .debug_str     0x00000c5c     0x128b main.o
+                               0x1423 (size before relaxing)
+ .debug_str     0x00001ee7       0x16 src/bod.o
+                                0x1ae (size before relaxing)
+ .debug_str     0x00001efd       0xd9 src/clkctrl.o
+                                0x454 (size before relaxing)
+ .debug_str     0x00001fd6       0x1c src/cpuint.o
+                                0x1b4 (size before relaxing)
+ .debug_str     0x00001ff2       0x43 src/driver_init.o
+                                0x489 (size before relaxing)
+ .debug_str     0x00002035      0x2e6 src/rtc.o
+                                0x60d (size before relaxing)
+ .debug_str     0x0000231b       0x11 src/slpctrl.o
+                                0x1b6 (size before relaxing)
+ .debug_str     0x0000232c       0x59 src/usart.o
+                                0x333 (size before relaxing)
+
+.debug_loc      0x00000000     0x4498
+ *(.debug_loc)
+ .debug_loc     0x00000000     0x4346 main.o
+ .debug_loc     0x00004346       0x7b src/clkctrl.o
+ .debug_loc     0x000043c1       0xd7 src/driver_init.o
+
+.debug_macinfo
+ *(.debug_macinfo)
+
+.debug_weaknames
+ *(.debug_weaknames)
+
+.debug_funcnames
+ *(.debug_funcnames)
+
+.debug_typenames
+ *(.debug_typenames)
+
+.debug_varnames
+ *(.debug_varnames)
+
+.debug_pubtypes
+ *(.debug_pubtypes)
+
+.debug_ranges   0x00000000      0x2e0
+ *(.debug_ranges)
+ .debug_ranges  0x00000000       0x10 atmel_start.o
+ .debug_ranges  0x00000010      0x250 main.o
+ .debug_ranges  0x00000260       0x10 src/bod.o
+ .debug_ranges  0x00000270       0x10 src/clkctrl.o
+ .debug_ranges  0x00000280       0x10 src/cpuint.o
+ .debug_ranges  0x00000290       0x20 src/driver_init.o
+ .debug_ranges  0x000002b0       0x10 src/rtc.o
+ .debug_ranges  0x000002c0       0x10 src/slpctrl.o
+ .debug_ranges  0x000002d0       0x10 src/usart.o
+
+.debug_macro
+ *(.debug_macro)
+OUTPUT(ADSCAM_TINY.elf elf32-avr)
+LOAD linker stubs

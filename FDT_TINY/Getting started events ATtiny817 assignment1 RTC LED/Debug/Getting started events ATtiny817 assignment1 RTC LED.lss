@@ -1,0 +1,340 @@
+
+Getting started events ATtiny817 assignment1 RTC LED.elf:     file format elf32-avr
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn
+  0 .data         00000000  00803e00  00803e00  00000148  2**0
+                  CONTENTS, ALLOC, LOAD, DATA
+  1 .text         000000f4  00000000  00000000  00000054  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  2 .comment      00000030  00000000  00000000  00000148  2**0
+                  CONTENTS, READONLY
+  3 .note.gnu.avr.deviceinfo 0000003c  00000000  00000000  00000178  2**2
+                  CONTENTS, READONLY
+  4 .debug_aranges 00000128  00000000  00000000  000001b4  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  5 .debug_info   00002864  00000000  00000000  000002dc  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  6 .debug_abbrev 00001afb  00000000  00000000  00002b40  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  7 .debug_line   000008e9  00000000  00000000  0000463b  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  8 .debug_frame  00000164  00000000  00000000  00004f24  2**2
+                  CONTENTS, READONLY, DEBUGGING
+  9 .debug_str    00001089  00000000  00000000  00005088  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 10 .debug_loc    000000d6  00000000  00000000  00006111  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 11 .debug_ranges 00000098  00000000  00000000  000061e7  2**0
+                  CONTENTS, READONLY, DEBUGGING
+
+Disassembly of section .text:
+
+00000000 <__vectors>:
+   0:	19 c0       	rjmp	.+50     	; 0x34 <__ctors_end>
+   2:	20 c0       	rjmp	.+64     	; 0x44 <__bad_interrupt>
+   4:	1f c0       	rjmp	.+62     	; 0x44 <__bad_interrupt>
+   6:	1e c0       	rjmp	.+60     	; 0x44 <__bad_interrupt>
+   8:	1d c0       	rjmp	.+58     	; 0x44 <__bad_interrupt>
+   a:	1c c0       	rjmp	.+56     	; 0x44 <__bad_interrupt>
+   c:	1e c0       	rjmp	.+60     	; 0x4a <__vector_6>
+   e:	1a c0       	rjmp	.+52     	; 0x44 <__bad_interrupt>
+  10:	19 c0       	rjmp	.+50     	; 0x44 <__bad_interrupt>
+  12:	18 c0       	rjmp	.+48     	; 0x44 <__bad_interrupt>
+  14:	17 c0       	rjmp	.+46     	; 0x44 <__bad_interrupt>
+  16:	16 c0       	rjmp	.+44     	; 0x44 <__bad_interrupt>
+  18:	15 c0       	rjmp	.+42     	; 0x44 <__bad_interrupt>
+  1a:	14 c0       	rjmp	.+40     	; 0x44 <__bad_interrupt>
+  1c:	13 c0       	rjmp	.+38     	; 0x44 <__bad_interrupt>
+  1e:	12 c0       	rjmp	.+36     	; 0x44 <__bad_interrupt>
+  20:	11 c0       	rjmp	.+34     	; 0x44 <__bad_interrupt>
+  22:	10 c0       	rjmp	.+32     	; 0x44 <__bad_interrupt>
+  24:	0f c0       	rjmp	.+30     	; 0x44 <__bad_interrupt>
+  26:	0e c0       	rjmp	.+28     	; 0x44 <__bad_interrupt>
+  28:	0d c0       	rjmp	.+26     	; 0x44 <__bad_interrupt>
+  2a:	0c c0       	rjmp	.+24     	; 0x44 <__bad_interrupt>
+  2c:	0b c0       	rjmp	.+22     	; 0x44 <__bad_interrupt>
+  2e:	0a c0       	rjmp	.+20     	; 0x44 <__bad_interrupt>
+  30:	09 c0       	rjmp	.+18     	; 0x44 <__bad_interrupt>
+  32:	08 c0       	rjmp	.+16     	; 0x44 <__bad_interrupt>
+
+00000034 <__ctors_end>:
+  34:	11 24       	eor	r1, r1
+  36:	1f be       	out	0x3f, r1	; 63
+  38:	cf ef       	ldi	r28, 0xFF	; 255
+  3a:	cd bf       	out	0x3d, r28	; 61
+  3c:	df e3       	ldi	r29, 0x3F	; 63
+  3e:	de bf       	out	0x3e, r29	; 62
+  40:	16 d0       	rcall	.+44     	; 0x6e <main>
+  42:	56 c0       	rjmp	.+172    	; 0xf0 <_exit>
+
+00000044 <__bad_interrupt>:
+  44:	dd cf       	rjmp	.-70     	; 0x0 <__vectors>
+
+00000046 <atmel_start_init>:
+/**
+ * Initializes MCU, drivers and middleware in the project
+**/
+void atmel_start_init(void)
+{
+	system_init();
+  46:	38 d0       	rcall	.+112    	; 0xb8 <system_init>
+  48:	08 95       	ret
+
+0000004a <__vector_6>:
+#include <driver_init.h>
+#include <compiler.h>
+
+ISR(RTC_CNT_vect)
+{
+  4a:	1f 92       	push	r1
+  4c:	0f 92       	push	r0
+  4e:	0f b6       	in	r0, 0x3f	; 63
+  50:	0f 92       	push	r0
+  52:	11 24       	eor	r1, r1
+  54:	8f 93       	push	r24
+ *
+ * \param[in] pin       The pin number within port
+ */
+static inline void PORTB_toggle_pin_level(const uint8_t pin)
+{
+	PORTB.OUTTGL = 1 << pin;
+  56:	80 e1       	ldi	r24, 0x10	; 16
+  58:	80 93 27 04 	sts	0x0427, r24	; 0x800427 <__TEXT_REGION_LENGTH__+0x700427>
+	/* Insert your RTC Overflow interrupt handling code */
+	LED0_toggle_level();
+
+	/* Overflow interrupt flag has to be cleared manually */
+	RTC.INTFLAGS = RTC_OVF_bm;
+  5c:	81 e0       	ldi	r24, 0x01	; 1
+  5e:	80 93 43 01 	sts	0x0143, r24	; 0x800143 <__TEXT_REGION_LENGTH__+0x700143>
+}
+  62:	8f 91       	pop	r24
+  64:	0f 90       	pop	r0
+  66:	0f be       	out	0x3f, r0	; 63
+  68:	0f 90       	pop	r0
+  6a:	1f 90       	pop	r1
+  6c:	18 95       	reti
+
+0000006e <main>:
+#include "atmel_start.h"
+
+int main(void)
+{
+	/* Initializes MCU, drivers and middleware */
+	atmel_start_init();
+  6e:	eb df       	rcall	.-42     	; 0x46 <atmel_start_init>
+  70:	ff cf       	rjmp	.-2      	; 0x70 <main+0x2>
+
+00000072 <BOD_init>:
+	//		 | BOD_VLMCFG_ABOVE_gc; /* Interrupt when supply goes above VLM level */
+
+	// BOD.VLMCTRLA = BOD_VLMLVL_5ABOVE_gc; /* VLM threshold 5% above BOD level */
+
+	return 0;
+}
+  72:	80 e0       	ldi	r24, 0x00	; 0
+  74:	08 95       	ret
+
+00000076 <CLKCTRL_init>:
+	//		 | 0 << CLKCTRL_CLKOUT_bp /* System clock out: disabled */);
+
+	// ccp_write_io((void*)&(CLKCTRL.MCLKLOCK),0 << CLKCTRL_LOCKEN_bp /* lock enable: disabled */);
+
+	return 0;
+}
+  76:	80 e0       	ldi	r24, 0x00	; 0
+  78:	08 95       	ret
+
+0000007a <CPUINT_init>:
+
+	// CPUINT.LVL0PRI = 0x0 << CPUINT_LVL0PRI_gp; /* Interrupt Level Priority: 0x0 */
+
+	// CPUINT.LVL1VEC = 0x0 << CPUINT_LVL1VEC_gp; /* Interrupt Vector with High Priority: 0x0 */
+
+	ENABLE_INTERRUPTS();
+  7a:	78 94       	sei
+
+	return 0;
+}
+  7c:	80 e0       	ldi	r24, 0x00	; 0
+  7e:	08 95       	ret
+
+00000080 <mcu_init>:
+#ifdef __cplusplus
+extern "C" {
+#endif
+
+void mcu_init(void)
+{
+  80:	e0 e1       	ldi	r30, 0x10	; 16
+  82:	f4 e0       	ldi	r31, 0x04	; 4
+	 * peripheral if used */
+
+	/* Set all pins to low power mode */
+
+	for (uint8_t i = 0; i < 8; i++) {
+		*((uint8_t *)&PORTA + 0x10 + i) |= 1 << PORT_PULLUPEN_bp;
+  84:	80 81       	ld	r24, Z
+  86:	88 60       	ori	r24, 0x08	; 8
+  88:	81 93       	st	Z+, r24
+	 * disables all peripherals to save power. Driver shall enable
+	 * peripheral if used */
+
+	/* Set all pins to low power mode */
+
+	for (uint8_t i = 0; i < 8; i++) {
+  8a:	e8 31       	cpi	r30, 0x18	; 24
+  8c:	84 e0       	ldi	r24, 0x04	; 4
+  8e:	f8 07       	cpc	r31, r24
+  90:	c9 f7       	brne	.-14     	; 0x84 <mcu_init+0x4>
+  92:	e0 e3       	ldi	r30, 0x30	; 48
+  94:	f4 e0       	ldi	r31, 0x04	; 4
+		*((uint8_t *)&PORTA + 0x10 + i) |= 1 << PORT_PULLUPEN_bp;
+	}
+
+	for (uint8_t i = 0; i < 8; i++) {
+		*((uint8_t *)&PORTB + 0x10 + i) |= 1 << PORT_PULLUPEN_bp;
+  96:	80 81       	ld	r24, Z
+  98:	88 60       	ori	r24, 0x08	; 8
+  9a:	81 93       	st	Z+, r24
+
+	for (uint8_t i = 0; i < 8; i++) {
+		*((uint8_t *)&PORTA + 0x10 + i) |= 1 << PORT_PULLUPEN_bp;
+	}
+
+	for (uint8_t i = 0; i < 8; i++) {
+  9c:	e8 33       	cpi	r30, 0x38	; 56
+  9e:	84 e0       	ldi	r24, 0x04	; 4
+  a0:	f8 07       	cpc	r31, r24
+  a2:	c9 f7       	brne	.-14     	; 0x96 <mcu_init+0x16>
+  a4:	e0 e5       	ldi	r30, 0x50	; 80
+  a6:	f4 e0       	ldi	r31, 0x04	; 4
+		*((uint8_t *)&PORTB + 0x10 + i) |= 1 << PORT_PULLUPEN_bp;
+	}
+
+	for (uint8_t i = 0; i < 8; i++) {
+		*((uint8_t *)&PORTC + 0x10 + i) |= 1 << PORT_PULLUPEN_bp;
+  a8:	80 81       	ld	r24, Z
+  aa:	88 60       	ori	r24, 0x08	; 8
+  ac:	81 93       	st	Z+, r24
+
+	for (uint8_t i = 0; i < 8; i++) {
+		*((uint8_t *)&PORTB + 0x10 + i) |= 1 << PORT_PULLUPEN_bp;
+	}
+
+	for (uint8_t i = 0; i < 8; i++) {
+  ae:	e8 35       	cpi	r30, 0x58	; 88
+  b0:	84 e0       	ldi	r24, 0x04	; 4
+  b2:	f8 07       	cpc	r31, r24
+  b4:	c9 f7       	brne	.-14     	; 0xa8 <mcu_init+0x28>
+		*((uint8_t *)&PORTC + 0x10 + i) |= 1 << PORT_PULLUPEN_bp;
+	}
+}
+  b6:	08 95       	ret
+
+000000b8 <system_init>:
+#include "driver_init.h"
+#include <system.h>
+
+void system_init()
+{
+	mcu_init();
+  b8:	e3 df       	rcall	.-58     	; 0x80 <mcu_init>
+	switch (dir) {
+	case PORT_DIR_IN:
+		VPORTB.DIR &= ~(1 << pin);
+		break;
+	case PORT_DIR_OUT:
+		VPORTB.DIR |= (1 << pin);
+  ba:	24 9a       	sbi	0x04, 4	; 4
+static inline void PORTB_set_pin_level(const uint8_t pin, const bool level)
+{
+	if (level == true) {
+		VPORTB.OUT |= (1 << pin);
+	} else {
+		VPORTB.OUT &= ~(1 << pin);
+  bc:	2c 98       	cbi	0x05, 4	; 5
+	    // <id> pad_initial_level
+	    // <false"> Low
+	    // <true"> High
+	    false);
+
+	CLKCTRL_init();
+  be:	db df       	rcall	.-74     	; 0x76 <CLKCTRL_init>
+
+	RTC_0_init();
+  c0:	04 d0       	rcall	.+8      	; 0xca <RTC_0_init>
+
+	CPUINT_init();
+  c2:	db df       	rcall	.-74     	; 0x7a <CPUINT_init>
+
+	SLPCTRL_init();
+  c4:	13 d0       	rcall	.+38     	; 0xec <SLPCTRL_init>
+
+	BOD_init();
+  c6:	d5 df       	rcall	.-86     	; 0x72 <BOD_init>
+  c8:	08 95       	ret
+
+000000ca <RTC_0_init>:
+ * \brief Initialize RTC interface
+ */
+int8_t RTC_0_init()
+{
+
+	while (RTC.STATUS > 0) { /* Wait for all register to be synchronized */
+  ca:	e0 e4       	ldi	r30, 0x40	; 64
+  cc:	f1 e0       	ldi	r31, 0x01	; 1
+  ce:	81 81       	ldd	r24, Z+1	; 0x01
+  d0:	81 11       	cpse	r24, r1
+  d2:	fd cf       	rjmp	.-6      	; 0xce <RTC_0_init+0x4>
+
+	// RTC.CMP = 0x0; /* Compare: 0x0 */
+
+	// RTC.CNT = 0x0; /* Counter: 0x0 */
+
+	RTC.CTRLA = RTC_PRESCALER_DIV32_gc  /* 32 */
+  d4:	e0 e4       	ldi	r30, 0x40	; 64
+  d6:	f1 e0       	ldi	r31, 0x01	; 1
+  d8:	89 e2       	ldi	r24, 0x29	; 41
+  da:	80 83       	st	Z, r24
+	            | 1 << RTC_RTCEN_bp     /* Enable: enabled */
+	            | 0 << RTC_RUNSTDBY_bp; /* Run In Standby: disabled */
+
+	RTC.PER = 0x1f4; /* Period: 0x1f4 */
+  dc:	84 ef       	ldi	r24, 0xF4	; 244
+  de:	91 e0       	ldi	r25, 0x01	; 1
+  e0:	82 87       	std	Z+10, r24	; 0x0a
+  e2:	93 87       	std	Z+11, r25	; 0x0b
+
+	// RTC.CLKSEL = RTC_CLKSEL_INT32K_gc; /* 32KHz Internal Ultra Low Power Oscillator (OSCULP32K) */
+
+	// RTC.DBGCTRL = 0 << RTC_DBGRUN_bp; /* Run in debug: disabled */
+
+	RTC.INTCTRL = 0 << RTC_CMP_bp    /* Compare Match Interrupt enable: disabled */
+  e4:	81 e0       	ldi	r24, 0x01	; 1
+  e6:	82 83       	std	Z+2, r24	; 0x02
+	// RTC.PITDBGCTRL = 0 << RTC_DBGRUN_bp; /* Run in debug: disabled */
+
+	// RTC.PITINTCTRL = 0 << RTC_PI_bp; /* Periodic Interrupt: disabled */
+
+	return 0;
+}
+  e8:	80 e0       	ldi	r24, 0x00	; 0
+  ea:	08 95       	ret
+
+000000ec <SLPCTRL_init>:
+
+	// SLPCTRL.CTRLA = 0 << SLPCTRL_SEN_bp /* Sleep enable: disabled */
+	//		 | SLPCTRL_SMODE_IDLE_gc; /* Idle mode */
+
+	return 0;
+}
+  ec:	80 e0       	ldi	r24, 0x00	; 0
+  ee:	08 95       	ret
+
+000000f0 <_exit>:
+  f0:	f8 94       	cli
+
+000000f2 <__stop_program>:
+  f2:	ff cf       	rjmp	.-2      	; 0xf2 <__stop_program>
